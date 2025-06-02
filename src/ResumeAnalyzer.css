@@ -1,0 +1,37 @@
+/* src/ResumeAnalyzer.css */
+.resume-analyzer-container {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
+}
+.heading{
+  text-align: center;
+  color:#031c37;
+}
+.resume-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  color:black;
+}
+
+.analysis-results {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.analysis-results p {
+  margin: 10px 0;
+}
+.analysis-results {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  text-align: center;
+}
