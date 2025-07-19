@@ -1,12 +1,62 @@
 /* src/ResumeAnalyzer.css */
 .resume-analyzer-container {
-  margin: 0 auto;
-  max-width: 600px;
-  text-align: left;
+  width: 100%;
+  max-width: 800px;
+  background: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(188, 34, 34, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  box-sizing: border-box;
 }
-.heading{
+
+.heading {
   text-align: center;
-  color:#031c37;
+  color: red;
+  padding: 2rem;
+  margin-bottom: -1rem;
+  font-size: 4rem;
+}
+
+.file-input {
+  padding: 20px 20px;
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 2.5rem;
+}
+
+.submit-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.resume-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  resize: vertical;
+}
+
+.analysis-results {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
 }
 .resume-input {
   width: 100%;
@@ -15,7 +65,7 @@
   border: 2px solid #ddd;
   border-radius: 4px;
   margin-bottom: 20px;
-  color:black;
+  color: black;
 }
 
 .analysis-results {
@@ -34,4 +84,83 @@
   border: 1px solid #eee;
   border-radius: 4px;
   text-align: center;
+}
+.analysis-results p {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.analysis-results strong {
+  color: #333;
+}
+.download-btn {
+  background-color: #4caf50;
+  margin-top:5rem;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.resume-textarea {
+  width: 100%;
+  padding: 15px;
+  font-family: monospace;
+  background: #f9f9f9;
+  border-radius: 6px;
+  border: 5px solid #ddd;
+  font-size: 1rem;
+}
+
+/* Mobile-first base styles: already clean! */
+
+/* Tablets & small desktops */
+@media (max-width: 768px) {
+  .resume-analyzer-container {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .submit-btn {
+    padding: 8px 14px;
+    font-size: 1rem;
+  }
+
+  .file-input {
+    padding: 8px;
+  }
+}
+
+/* Small devices (like iPhone SE or Galaxy Fold) */
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .resume-input {
+    font-size: 0.95rem;
+  }
+
+  .submit-btn {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .analysis-results {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+
+  .resume-analyzer-container {
+    border-radius: 0;
+    box-shadow: none;
+  }
 }
